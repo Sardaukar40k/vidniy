@@ -1,0 +1,56 @@
+.logo {
+  width: (650/2000)*100%;
+  position: relative;
+  z-index: 1;
+  float: left;
+  &:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 140px solid transparent;
+    border-top: 114px solid #111;
+    position: absolute;
+    right: -140px;
+    top: 0;
+    z-index: 1;
+  }
+  &:before {
+    content: '';
+    display: block;
+    background: url("../img/header-tiangle.png");
+    width: 135px;
+    height: 104px;
+    right: -137px;
+    bottom: 7px;
+    z-index: -1;
+    position: absolute;
+  }
+}
+.slogan {
+  width: (1167/2000)*100%;
+  background-color: rgb(255, 203, 60);
+  float: right;
+  padding: 25px 0 20px;
+  font-size: (20/16)*100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 0 solid transparent;
+    border-left: 85px solid transparent;
+    border-bottom: 130px solid #ffcb3c;
+    border-right: 12px solid #ffcb3c;
+    position: absolute;
+    bottom: 0;
+    left: -62px;
+    z-index: -1;
+  }
+  h1 {
+    color: #000;
+  }
+}
