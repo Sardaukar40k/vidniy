@@ -1,0 +1,23 @@
+{
+  "name": "vidniy",
+  "version": "0.0.0",
+  "authors": [
+    "Alexey Maevskiy <mr.overlord2012@gmail.com>"
+  ],
+  "description": "Страница ЖК Видный",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.4"
+  }
+}
