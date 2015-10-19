@@ -1,3 +1,7 @@
+.main-header {
+  background: url("../img/header-bg.png") center center no-repeat;
+  height: 700px;
+}
 .logo {
   width: (650/2000)*100%;
   position: relative;
@@ -37,6 +41,7 @@
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
+  z-index: 1;
   &:after {
     content: '';
     width: 0;
