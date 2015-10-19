@@ -65,6 +65,7 @@ gulp.task('browsersync', function(cb) {
 /* --- Вотчеры --- */
 gulp.task('watch', function() {
   gulp.watch('scss/*/_*.scss', ['sass', browsersync.reload]); //wiredep
+  gulp.watch('./index.html', browsersync.reload); //стили
   gulp.watch('js/_*.js', ['scripts', browsersync.reload]); //стили
   gulp.watch('./bower.json', ['wiredep']); //скрипты
 });
