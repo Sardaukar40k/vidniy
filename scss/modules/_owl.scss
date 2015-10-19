@@ -1,0 +1,29 @@
+.owl {
+  &-theme &-controls &-buttons div {
+    position: absolute;
+  }
+  &-theme &-controls &-buttons &-prev {
+    left: -45px;
+    top: 35%;
+    opacity: .5;
+    .control-img {
+      width: 100% !important;
+    }
+  }
+  &-theme &-controls &-buttons &-next {
+    right: -45px;
+    top: 35%;
+    opacity: .5;
+    .control-img {
+      width: 100% !important;
+    }
+  }
+  @media (max-width: $content-width) {
+    &-theme &-controls &-buttons &-next {
+      right: -15px;
+    }
+    &-theme &-controls &-buttons &-prev {
+      left: -15px;
+    }
+  }
+}

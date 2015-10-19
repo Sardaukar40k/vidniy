@@ -3,3 +3,14 @@
   overflow: hidden;
   font-family: $font-main;
 }
+h2 {
+  font-size: 24/16 * 100%;
+  font-weight: bold;
+  text-align: center;
+}
+.container {
+  width: $content-width;
+  @media (max-width: $content-width) {
+    width: 100%;
+  }
+}

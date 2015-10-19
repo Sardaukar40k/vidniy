@@ -1,3 +1,31 @@
 %main-button {
-
+    background: #e70710 url('../img/button-bg.png') center center no-repeat;
+    box-shadow: 0 0 0 3px rgba(0,0,0,.15);
+    border: none;
+    border-bottom: 4px solid #972428;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-transition: .1s .1s ease-in-out;
+    -o-transition: .1s .1s ease-in-out;
+    transition: .1s .1s ease-in-out;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px 50px;
+  height: 40px;
+  font-weight: 600;
+  display: block;
+    &:hover {
+      color: #fff;
+      border-bottom: 2px solid #961e23;
+      background-position: 45%;
+    }
+    &:active, &:focus {
+      text-decoration: none;
+      color: #fff;
+      outline: none;
+      border: none;
+      background-position: 43%;
+    }
 }

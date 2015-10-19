@@ -35,6 +35,8 @@
 .slogan {
   width: (1167/2000)*100%;
   background-color: rgb(255, 203, 60);
+  -webkit-background-size: cover;
+  background-size: cover;
   float: right;
   padding: 25px 0 20px;
   font-size: (20/16)*100%;
