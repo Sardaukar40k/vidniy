@@ -1,0 +1,80 @@
+.tech-about-content {
+  margin-bottom: 71px;
+  background: url('../img/about-bg.jpg') center bottom no-repeat;
+  background-size: cover;
+}
+.tech {
+  margin: 300px auto 100px;
+  h2 {
+
+  }
+  &-plane {
+    width: 320/960 * 100%;
+    float: left;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 40px auto;
+    padding: 0 10px 0 0;
+    img {
+      display: block;
+      margin: 40px auto;
+      max-width: 100%;
+    }
+  }
+  &-materials {
+    @extend .tech-plane;
+    width: 640/960 * 100%;
+    padding: 0 25px;
+    &-item {
+      clear: both;
+      margin: 25px auto 45px;
+      p {
+        font-weight: normal;
+        font-size: 14/16 * 100%;
+        vertical-align: bottom;
+      }
+      img {
+        padding: 0 5px 0 0;
+        margin: 0 auto;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    &-constr {
+      h3 {
+        font-size: 1em;
+        font-weight: bold;
+        padding-top: 40px;
+      }
+      ul {
+        margin-top: 16px;
+        list-style: disc;
+        float: left;
+        width: 50%;
+        padding: 0 15px 0 20px;
+        li {
+          font-size: 13/16 * 100%;
+          line-height: 1.5;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+.about {
+  padding: 90px 0 150px;
+  color: #fff;
+  h2 {
+    color: #fff;
+    margin-bottom: 35px;
+  }
+  &-text {
+    p {
+      margin-bottom: 30px;
+      font-size: 18px;
+      text-align: center;
+      line-height: 1.2;
+      font-weight: normal;
+    }
+  }
+}

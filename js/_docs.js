@@ -1,7 +1,5 @@
 $(document).ready(function() {
-
   var docs = $("#docs-carousel");
-
   docs.owlCarousel ({
     items : 6,
     itemsDesktop : [1920, 6],
@@ -19,5 +17,4 @@ $(document).ready(function() {
   $(".prev-leader").click(function(){
     docs.trigger('owl.prev');
   });
-
 });
