@@ -20,6 +20,8 @@
     img {
       display: block;
       margin: 0 auto 10px;
+      border-radius: 50%;
+      @include animate-icon;
     }
     h3 {
       font-size: 14/16 * 100%;
