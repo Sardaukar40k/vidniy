@@ -1,16 +1,30 @@
 .form-bottom {
   @extend %form;
+  p {
+    font-size: 12/16 *100%;
+    text-align: center;
+    margin: 20px auto;
+  }
 }
 .form-middle {
   @extend %form;
-  width: $content-width;
+  //width: $content-width;
   border: none;
   margin: 0 auto;
+  background: url("../../img/form-bg.png") center center no-repeat;
+  background-size: contain;
+  padding-bottom: 140px;
   form {
-    width: 228/960 * 100%;
+    width: 128/960 * 100%;
     text-align: center;
     input, input[type="submit"] {
       width: 100%;
     }
+  }
+  p {
+    font-size: 12/16 *100%;
+    text-align: center;
+    width: 170/960 * 100%;
+    margin: 20px auto;
   }
 }
