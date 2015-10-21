@@ -17,6 +17,12 @@
     img {
       display: block;
       margin: 0 auto;
+      border-radius: 50%;
+      border: none;
+      transition: .2s .1s ease-in-out;
+      &:hover {
+        box-shadow: 0 0 8px 4px rgba(0,0,0,.3);
+      }
     }
     ul {
       list-style-type: square;
