@@ -1,0 +1,66 @@
+.buy {
+  background: #ffcb3c;
+  position: relative;
+  margin-bottom: 155px;
+  top: -90px;
+  z-index: -1;
+  h2 {
+    position: relative;
+    top: -80px;
+  }
+  &-item {
+    width: 20%;
+    float: left;
+    img {
+      display: block;
+      margin: 0 auto 10px;
+    }
+    h3 {
+      font-size: 14/16 * 100%;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .divider {
+      width: 40%;
+      height: 1px;
+      background: #000;
+      margin: 15px auto;
+    }
+    p {
+      font-size: 12/16 * 100%;
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+      font-weight: 600;
+    }
+    &:first-child {
+      .divider {
+        margin: 34px auto 20px;
+      }
+    }
+  }
+  &:after {
+    content: '';
+    display: block;
+    background: transparent url("../img/buy-bg-bottom.png") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 220px;
+    margin: 0 auto;
+    bottom: -220px;
+    position: absolute;
+    z-index: -1;
+  }
+  &:before {
+    content: '';
+    display: block;
+    background: transparent url("../img/buy-bg-top.png") center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    top: -200px;
+    position: absolute;
+  }
+}
