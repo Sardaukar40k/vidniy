@@ -1,0 +1,36 @@
+.reason {
+  margin-bottom: 100px;
+  &-item {
+    width: 50%;
+    float: left;
+    h2 {
+      font-size: 24/16 * 100%;
+      margin: 0 auto 40px;
+      font-weight: 600;
+      span {
+        display: block;
+        font-size: (12/24) * 100%;
+        text-transform: lowercase;
+      }
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+    ul {
+      list-style-type: square;
+      width: 50%;
+      margin: 20px auto 0;
+      li {
+        margin: 10px auto;
+        font-size: 13/16 * 100%;
+        font-weight: 600;
+      }
+    }
+    &:first-child {
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
