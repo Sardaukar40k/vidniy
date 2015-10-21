@@ -1,0 +1,16 @@
+.form-bottom {
+  @extend %form;
+}
+.form-middle {
+  @extend %form;
+  width: $content-width;
+  border: none;
+  margin: 0 auto;
+  form {
+    width: 228/960 * 100%;
+    text-align: center;
+    input, input[type="submit"] {
+      width: 100%;
+    }
+  }
+}

@@ -23,7 +23,7 @@ gulp.task('bower', function() {
 
 /* --- Конкатенация и компеляция SCSS в CSS ---*/
 gulp.task('sass', function () {
-  return gulp.src(['scss/utilities/_*.scss', 'scss/states/_*.scss', 'scss/base/_*.scss', 'scss/layouts/_*.scss', 'scss/modules/_*.scss'])
+  return gulp.src(['scss/states/_variables.scss', 'scss/utilities/_*.scss', 'scss/states/_*.scss', 'scss/base/_*.scss', 'scss/layouts/_*.scss', 'scss/modules/_*.scss'])
     .pipe(concat('style.scss'))
     .pipe(autoprefixer({
       "browsers": ["firefox >= 15", "ios >= 8", "android >= 4.0", "and_uc >= 9.9", "ie >= 9"]
