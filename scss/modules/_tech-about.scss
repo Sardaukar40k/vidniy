@@ -5,9 +5,6 @@
 }
 .tech {
   margin: 40px auto 100px;
-  h2 {
-
-  }
   &-plane {
     width: 320/960 * 100%;
     float: left;
@@ -15,10 +12,21 @@
     font-weight: bold;
     margin: 40px auto;
     padding: 0 10px 0 0;
+    h3 {
+      @media all and (max-width: $content-width/2) {
+        text-align: center;
+      }
+    }
     img {
       display: block;
       margin: 40px auto;
       max-width: 100%;
+      @media all and (max-width: $content-width/2) {
+        width: 80%;
+      }
+    }
+    @media all and (max-width: $content-width) {
+      width: 100%;
     }
   }
   &-materials {
@@ -32,12 +40,24 @@
         font-weight: normal;
         font-size: 14/16 * 100%;
         vertical-align: bottom;
+        @media all and (max-width: $content-width/2) {
+          width: 70%;
+          margin: 0 auto;
+        }
       }
       img {
         padding: 0 5px 0 0;
         margin: 0 auto;
         display: inline-block;
         vertical-align: middle;
+        @media all and (max-width: $content-width/2) {
+          width: 30%;
+          display: block;
+          margin: 15px auto;
+        }
+      }
+      @media all and  (max-width: $content-width/2) {
+        float: none;
       }
     }
     &-constr {
@@ -58,7 +78,24 @@
           font-weight: normal;
         }
       }
+      @media all and (max-width: $content-width) {
+        margin-top: 0;
+      }
+      @media all and (max-width: $content-width/2) {
+        float: none;
+        margin-bottom: 280px;
+      }
     }
+    @media all and (max-width: $content-width/2
+  ) {
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  @media all and (max-width: $content-width
+) {
+   padding: 0 15px;
   }
 }
 .about {
@@ -75,6 +112,14 @@
       text-align: center;
       line-height: 1.2;
       font-weight: normal;
+    }
+  }
+  @media all and (max-width: $content-width/2) {
+    padding-top: 0;
+    padding-bottom: 270px;
+    p {
+      font-size: 14/16 * 100%;
+      padding: 0 15px;
     }
   }
 }

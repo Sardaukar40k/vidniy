@@ -6,6 +6,16 @@
     text-align: center;
     position: relative;
     max-width: 25%;
+    @media all and (max-width: $content-width) {
+      width: 17%;
+      margin: 170px auto 0 35.9%;
+      top: -25px;
+    }
+    @media all and (max-width: $content-width/2) {
+      width: 40%;
+      margin: 100px auto 30% 0;
+      top: 75px;
+    }
   }
   .render {
     display: block;
@@ -13,5 +23,13 @@
     top: -155px;
     position: relative;
     max-width: 100%;
+    z-index: 100;
+    @media all and (max-width: $content-width) {
+      width: 70%;
+    }
+    @media all and (max-width: $content-width/2) {
+      width: 80%;
+      top: -130px;
+    }
   }
 }

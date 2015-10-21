@@ -5,13 +5,22 @@
     text-align: center;
     margin: 20px auto;
   }
+  h3 {
+    font-size: 13/16 * 100%;
+  }
+  @media all and (max-width: $content-width) {
+    width: 60%;
+  }
+  @media all and (max-width: $content-width/2) {
+    width: 85%;
+  }
 }
 .form-middle {
   @extend %form;
   //width: $content-width;
   border: none;
   margin: 0 auto;
-  background: url("../../img/form-bg.png") center center no-repeat;
+  background: url("../../img/form-bg.png") center top no-repeat;
   background-size: contain;
   padding-bottom: 140px;
   form {
@@ -19,6 +28,7 @@
     text-align: center;
     input, input[type="submit"] {
       width: 100%;
+      padding: 10px 0;
     }
   }
   p {
@@ -26,5 +36,20 @@
     text-align: center;
     width: 170/960 * 100%;
     margin: 20px auto;
+  }
+  @media all and (max-width: $content-width
+) {
+    background-size: cover;
+    form {
+      width: 50%;
+    }
+    p {
+      width: 50%;
+    }
+  }
+  @media all and (max-width: $content-width/2) {
+      form {
+        width: 65%;
+      }
   }
 }

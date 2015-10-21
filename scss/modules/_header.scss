@@ -1,6 +1,6 @@
 .main-header {
   background: url("../img/header-bg.png") center center no-repeat;
-  height: 700px;
+  background-size: cover;
 }
 .logo {
   width: (650/2000)*100%;
@@ -31,6 +31,9 @@
     z-index: -1;
     position: absolute;
   }
+  @media all and (max-width: $content-width) {
+    width: 30%;
+  }
 }
 .slogan {
   width: (1167/2000)*100%;
@@ -59,5 +62,14 @@
   }
   h1 {
     color: #000;
+    @media all and (max-width: $content-width/2) {
+      font-size: .7em;
+    }
+  }
+  @media all and (max-width: $content-width) {
+    width: 50%;
+  }
+  @media all and (max-width: $content-width/2) {
+    width: 40%;
   }
 }
