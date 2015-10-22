@@ -1,0 +1,84 @@
+.news {
+  font-family: $font-main;
+  margin-bottom: 20px;
+  &-item {
+    width: 25%;
+    float: left;
+    margin: 60px auto 40px;
+    padding: 0 10px;
+    @media (max-width: $content-width) {
+      width: 100%;
+    }
+    a {
+      width: 100%;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      .item-caption {
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        background: rgba(0,0,0,.65) url('../img/m-news-item-follow.png') center center no-repeat;
+        background-size: 15%;
+        transition: all .3s linear;
+        z-index: 4;
+        &:hover {
+          opacity: .8;
+        }
+      }
+      img {
+        width: 100%;
+        position: relative;
+        display: block;
+        transition: all .3s .1s linear;
+        @media (max-width: $content-width) {
+          display: block;
+          max-width: 65%;
+          margin: 0 auto;
+        }
+        @media (max-width: $content-width/2) {
+          max-width: 85%;
+        }
+      }
+      &:hover {
+        img {
+          transform: scale(1.05, 1.05);
+        }
+      }
+    }
+    h3 {
+      line-height: 1.2;
+      text-align: center;
+      margin: 15px auto 2px;
+      @media (max-width: $content-width) {
+        max-width: 65%;
+      }
+      @media (max-width: $content-width/2) {
+        max-width: 85%;
+      }
+      a{
+        color: #000;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    p {
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+}
+.amimate--scale {
+  transition: all .3s  linear;
+  &:hover {
+    position: relative;
+    transform: scale(1.05, 1.05);
+  }
+}

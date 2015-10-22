@@ -1,14 +1,24 @@
 $(document).ready(function() {
-  $('.animate-fade-left').addClass('.animation-hide').viewportChecker({
-    classToRemove : 'animation-hide',
-    classToAdd: 'animation-visible animated fadeInLeft',
-    offset: 100
+  $('.animate-fade-left').viewportChecker({
+    classToAdd: 'animated fadeInLeft',
+    offset: 50
   });
 });
 $(document).ready(function() {
-  $('.animate-fade-right').addClass('.animation-hide').viewportChecker({
-    classToRemove : 'animation-hide',
-    classToAdd: 'animation-visible animated fadeInRight',
-    offset: 100
+  $('.animate-fade-right').viewportChecker({
+    classToAdd: 'animated fadeInRight',
+    offset: 50
+  });
+});
+$(document).ready(function() {
+  $('.animate-fade-down').viewportChecker({
+    classToAdd: 'animated fadeInDown',
+    offset: 50
+  });
+});
+$(document).ready(function() {
+  $('.animate-zoom-in').viewportChecker({
+    classToAdd: 'animated zoomIn',
+    offset: 50
   });
 });

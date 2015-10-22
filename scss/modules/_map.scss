@@ -75,4 +75,11 @@
     opacity: .5;
     transition: .3s 0s ease-in-out;
   }
+  @media screen and (max-width: $content-width) {
+    text-align: center;
+    left: 31%;
+    z-index: 6000;
+    position: absolute;
+    top: -60px;
+  }
 }
