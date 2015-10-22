@@ -1,0 +1,7 @@
+@mixin animate-icon {
+  transition: .2s .1s ease-in-out;
+  &:hover {
+    box-shadow: 3px 5px 8px 0 rgba(0,0,0,.3);
+    transform: translate(0, -3px);
+  }
+}

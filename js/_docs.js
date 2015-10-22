@@ -1,8 +1,8 @@
 $(document).ready(function() {
   var docs = $("#docs-carousel");
   docs.owlCarousel ({
-    items : 6,
-    itemsDesktop : [1920, 6],
+    items : 5,
+    itemsDesktop : [1920, 5],
     itemsTablet : [600, 3],
     itemsMobile : [480, 1],
     navigation: true,

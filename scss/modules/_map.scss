@@ -2,6 +2,7 @@
   z-index: 1;
   position: relative;
   margin-top: 40px;
+  transition: .5s .1s linear;
   iframe {
     width: 100%;
     box-shadow: 0 2px 15px 10px rgba(0,0,0,0.2);
@@ -10,10 +11,10 @@
   }
   h2 {
     text-align: center;
-    margin: 70px auto;
+    margin: -30px auto;
     left: 45%;
     width: 10%;
-    z-index: 4;
+    z-index: 6000;
     position: absolute;
   }
   &:before {
@@ -26,7 +27,7 @@
     position: absolute;
     top: -80px;
     left: 0;
-    box-shadow: -6px 8px 15px 0 rgba(0,0,0,.2);
+    box-shadow: -8px 12px 15px 0 rgba(0,0,0,0.2);
     z-index: 5;
     @media all and (max-width: $content-width) {
       width: 51%;
@@ -42,10 +43,36 @@
     position: absolute;
     top: -80px;
     right: -3px;
-    box-shadow: 6px 8px 15px 0 rgba(0,0,0,.2);
+    box-shadow: 3px 12px 15px 0 rgba(0,0,0,0.2);
     z-index: 3;
     @media all and (max-width: $content-width) {
       width: 51%;
     }
+  }
+}
+.hidden-map {
+  iframe {
+    height: 60px;
+  }
+}
+.map-trigger {
+  cursor: pointer;
+  position: relative;
+  &:hover {
+    &:after {
+      opacity: 1;
+      transform: translate(0, 3px);
+    }
+  }
+  &:after {
+    content: '';
+    background: url("../../img/map-trigger.png") center center no-repeat;
+    background-size: cover;
+    margin: 15px auto 30px;
+    width: 40px;
+    height: 20px;
+    display: block;
+    opacity: .5;
+    transition: .2s .1s ease-in-out;
   }
 }
