@@ -3,12 +3,13 @@ $(document).ready(function () {
     if( $(".map").hasClass("hidden-map") ) {
       $(".map>iframe").animate({
         'height' : '600px'
-      }, 550 );
+      }, 500 );
       $(".map").removeClass("hidden-map");
-    } else {
+    }
+    else {
       $(".map>iframe").animate({
         'height' : '60px'
-      }, 550);
+      }, 500);
       $(".map").addClass("hidden-map");
     }
   });
